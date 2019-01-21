@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Mail Template Guide</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/ocean.css">
+	<script src="style/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="flex-container header">
+		<div class="flex-item no-style no-margin">
+			<h1><img src="img/TS_logo.png" class="ts-logo" /> E-Mail Templates Guideline</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="active">Basic Framework</a></li>
+					<li><a href="email-header.html">Header</a></li>
+					<li><a href="email-imagebanner.html">Banner Image</a></li>
+					<li><a href="email-summary.html">Summary (Text)</a></li>
+					<li><a href="email-plaintext.html">Plain Text</a></li>
+					<li><a href="email-image.html">Image</a></li>
+					<li><a href="email-bulletlist.html">Bullet List</a></li>
+					<li><a href="email-table.html">Document Preview (Table)</a></li>
+					<li><a href="email-message.html">Message</a></li>
+					<li><a href="email-quote.html">Quote</a></li>
+					<li><a href="email-actionbutton.html">Action Button</a></li>
+					<li><a href="email-footer.html">Footer</a></li>
+					<li><a href="email-examples.html">E-Mail Examples</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="flex-container current-desc">
+		<div class="flex-item no-style no-margin">
+			<h2 class="ts-blue">BASIC FRAMEWORK</h2>
+			<p>The basic e-mail framework (boilerplate) represents the the base code to be used in each e-mail template. It includes the standard HTML code (tested in all major e-mail apps) with commented lines wich need to be pre-filled with relevant data (such lines asta <strong>TITLE</strong>, <strong>INBOX PREVIEW TEXT</strong>, <strong>E-MAIL SENT BY</strong>. Also, the links to the <strong>VIEW IN BROWSER</strong>, <strong>SETTINGS</strong> and <strong>FEEDBACK APP</strong> should be put into the mater template.</p>
+			<p>The code provided should be used <strong>AS IS</strong> and should not be altered no matter what! Any modular data (CONTENT) should be put into the body of the basic framework.</p>
+		</div>
+	</div>
+
+	<div class="flex-container">
+		<div class="flex-item no-style">
+			<h2>PREVIEW</h2>
+		</div>
+		<div class="flex-item">
+			<h2>CODE</h2>
+		</div>
+	</div>
+
+	<div class="flex-container">
+		<div class="flex-item">
+			<div class="preview-container">
+				<!--[if mso]>
+					<style>
+						* {
+							font-family: Arial, sans-serif !important;
+						}
+					</style>
+				<![endif]-->
+				<!--[if !mso]><!-->
+					<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+				<!--<![endif]-->
+				<style>
+					html,
+					body {
+						margin: 0 auto !important;
+						padding: 0 !important;
+						height: 100% !important;
+						width: 100% !important;
+					}
+					* {
+						-ms-text-size-adjust: 100%;
+						-webkit-text-size-adjust: 100%;
+					}
+					div[style*="margin: 16px 0"] {
+						margin:0 !important;
+					}
+					table,
+					td {
+						mso-table-lspace: 0pt !important;
+						mso-table-rspace: 0pt !important;
+					}
+					table {
+						border-spacing: 0 !important;
+						border-collapse: collapse !important;
+						table-layout: fixed !important;
+						margin: 0 auto !important;
+					}
+					table table table {
+						table-layout: auto;
+					}
+					img {
+						-ms-interpolation-mode:bicubic;
+					}
+					*[x-apple-data-detectors],
+					.x-gmail-data-detectors,
+					.x-gmail-data-detectors *,
+					.aBn {
+						border-bottom: 0 !important;
+						cursor: default !important;
+						color: inherit !important;
+						text-decoration: none !important;
+						font-size: inherit !important;
+						font-family: inherit !important;
+						font-weight: inherit !important;
+						line-height: inherit !important;
+					}
+					.a6S {
+						display: none !important;
+						opacity: 0.01 !important;
+					}
+					img.g-img + div {
+						display:none !important;
+					}
+					@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+						.email-container {
+							min-width: 375px !important;
+						}
+					}
+					@media screen and (max-width: 480px) {
+						center {
+							padding: 10px;
+						}
+						.email-container p {
+							font-size: 13px !important;
+							line-height: 16px !important;
+						}
+					}
+				</style>
+				<!--[if gte mso 9]>
+				<xml>
+					<o:OfficeDocumentSettings>
+						<o:AllowPNG/>
+						<o:PixelsPerInch>96</o:PixelsPerInch>
+					</o:OfficeDocumentSettings>
+				</xml>
+				<![endif]-->
+				<div style="background: #F2F2F2; margin: 0; mso-line-height-rule: exactly;">
+					<center style="width: 100%; background: #F2F2F2; text-align: left;">
+						<div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Open Sans', sans-serif;">
+							(Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+						</div>
+						<div style="max-width: 680px; margin: auto;" class="email-container">
+							<!--[if mso]>
+							<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+							<tr>
+							<td>
+							<![endif]-->
+							<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" class="email-container">
+								<tr>
+									<td>
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td align="right" style="padding: 40px 0px 10px 0px; font-family: 'Open Sans', sans-serif; font-size:12px; line-height:22px;">
+													<a href="#" target="_blank" style="text-decoration:underline; color:#949494;">View in browser</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								<tr>
+									<td bgcolor="#ffffff" style="border:1px solid #dddddd;">
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td align="center" style="padding: 20px 20px 20px 20px;">
+													-- HEADER HERE --<br />-- ALL CONTENT HERE --<br />-- FOOTER --
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+											<tr>
+												<td style="padding: 20px 20px 10px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal; font-style: italic;">
+													<p style="margin: 0;">This email was sent to: __________________
+														<br/>If you don't want to receive future status notifications, you can <a href="#" target="_blank" style="text-decoration:underline; color:#949494;">change your notification settings</a>.</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0px 20px 10px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal;">
+													<p style="margin: 0;"><a href="#" target="_blank" style="text-decoration:underline; color:#949494;">Give us feedback.</a></p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0px 20px 20px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal;">
+													<p style="margin: 0;">Email delivered by
+														<br/><img src="img/tradeshift.png" width="104" height="12" alt="Tradeshift" border="0" style="height: auto; font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 20px; color: #4A4A4A;">
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+				
+							<!--[if mso]>
+							</td>
+							</tr>
+							</table>
+							<![endif]-->
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta name="viewport" content="width=device-width"&gt;
+ &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+ &lt;meta name="x-apple-disable-message-reformatting"&gt;
+ &lt;title&gt;The title tag shows in email notifications, for some e-mail clients&lt;/title&gt;
+ &lt;!--[if mso]&gt;
+ &lt;style&gt;
+ * {
+  font-family: Arial, sans-serif !important;
+ }
+ &lt;/style&gt;
+ &lt;![endif]--&gt;
+ &lt;!--[if !mso]&gt;&lt;!--&gt;
+ &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"&gt;
+ &lt;!--&lt;![endif]--&gt;
+ &lt;style&gt;
+  html,
+  body {
+   margin: 0 auto !important;
+   padding: 0 !important;
+   height: 100% !important;
+   width: 100% !important;
+  }
+  * {
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+  }
+  div[style*="margin: 16px 0"] {
+   margin:0 !important;
+  }
+  table,
+  td {
+   mso-table-lspace: 0pt !important;
+   mso-table-rspace: 0pt !important;
+  }
+  table {
+   border-spacing: 0 !important;
+   border-collapse: collapse !important;
+   table-layout: fixed !important;
+   margin: 0 auto !important;
+  }
+  table table table {
+   table-layout: auto;
+  }
+  img {
+   -ms-interpolation-mode:bicubic;
+  }
+  *[x-apple-data-detectors],
+  .x-gmail-data-detectors,
+  .x-gmail-data-detectors *,
+  .aBn {
+   border-bottom: 0 !important;
+   cursor: default !important;
+   color: inherit !important;
+   text-decoration: none !important;
+   font-size: inherit !important;
+   font-family: inherit !important;
+   font-weight: inherit !important;
+   line-height: inherit !important;
+  }
+  .a6S {
+   display: none !important;
+   opacity: 0.01 !important;
+  }
+  img.g-img + div {
+   display:none !important;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+   .email-container {
+    min-width: 375px !important;
+   }
+  }
+  @media screen and (max-width: 480px) {
+   center {
+    padding: 10px;
+   }
+   .email-container p {
+    font-size: 13px !important;
+    line-height: 16px !important;
+   }
+  }
+ &lt;/style&gt;
+ &lt;!--[if gte mso 9]&gt;
+  &lt;xml&gt;
+   &lt;o:OfficeDocumentSettings&gt;
+   &lt;o:AllowPNG/&gt;
+   &lt;o:PixelsPerInch&gt;96&lt;/o:PixelsPerInch&gt;&lt;/o:OfficeDocumentSettings&gt;
+  &lt;/xml&gt;
+ &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body width="100%" bgcolor="#F2F2F2" style="margin: 0; mso-line-height-rule: exactly;"&gt;
+ &lt;center style="width: 100%; background: #F2F2F2; text-align: left;"&gt;
+  &lt;div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Open Sans', sans-serif;"&gt;
+   (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+  &lt;/div&gt;
+  &lt;div style="max-width: 680px; margin: auto;" class="email-container"&gt;
+   &lt;!--[if mso]&gt;
+    &lt;table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center"&gt;
+     &lt;tr&gt;
+      &lt;td&gt;
+       &lt;![endif]--&gt;
+       &lt;table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" class="email-container"&gt;
+        &lt;tr&gt;
+         &lt;td&gt;
+          &lt;table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
+           &lt;tr&gt;
+            &lt;td align="right" style="padding: 40px 0px 10px 0px; font-family: 'Open Sans', sans-serif; font-size:12px; line-height:22px;"&gt;
+             &lt;a href="#" target="_blank" style="text-decoration:underline; color:#949494;"&gt;View in browser&lt;/a&gt;
+            &lt;/td&gt;
+           &lt;/tr&gt;
+          &lt;/table&gt;
+         &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td bgcolor="#ffffff" style="border:1px solid #dddddd;"&gt;
+          &lt;table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
+          &lt;!-- CONTENT STARTS HERE --&gt;
+           &lt;tr&gt;
+            &lt;td align="left" style="padding: 20px 20px 20px 20px;"&gt;
+             CONTENT HERE
+            &lt;/td&gt;
+           &lt;/tr&gt;
+          &lt;!--CONTENT ENDS HERE --&gt;
+          &lt;/table&gt;
+         &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+         &lt;table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
+          &lt;tr&gt;
+           &lt;td style="padding: 20px 20px 10px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal; font-style: italic;"&gt;
+            &lt;p style="margin: 0;"&gt;This email was sent to: __________________
+            &lt;br/&gt;If you don't want to receive future status notifications, you can &lt;a href="#" target="_blank" style="text-decoration:underline; color:#949494;"&gt;change your notification settings&lt;/a&gt;.&lt;/p&gt;
+           &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+           &lt;td style="padding: 0px 20px 10px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal;"&gt;
+            &lt;p style="margin: 0;"&gt;&lt;a href="#" target="_blank" style="text-decoration:underline; color:#949494;"&gt;Give us feedback.&lt;/a&gt;&lt;/p&gt;
+           &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+           &lt;td style="padding: 0px 20px 20px 20px; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #949494; text-align: center; font-weight:normal;"&gt;
+            &lt;p style="margin: 0;"&gt;Email delivered by
+            &lt;br/&gt;&lt;img src="img/tradeshift.png" width="104" height="12" alt="Tradeshift" border="0" style="height: auto; font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 20px; color: #4A4A4A;"&gt;&lt;/p&gt;
+           &lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;/table&gt;
+        &lt;/td&gt;
+       &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;!--[if mso]&gt;
+     &lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;/table&gt;
+  &lt;![endif]--&gt;
+  &lt;/div&gt;
+ &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		</div>
+	</div>
+</body>
+</html>

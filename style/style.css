@@ -1,0 +1,144 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: #414141;
+  background: #F2F4F4;
+  margin: 0;
+  padding: 0;
+}
+
+pre, code {
+  margin: 0;
+  padding: 0;
+}
+
+.ts-logo {
+  vertical-align: text-top;
+  height: 30px;
+  margin-left: -5px;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;  
+}
+
+a {
+  color: #0078c1;
+  text-decoration: underline;
+}
+
+.ts-blue {
+  color: #20a0e9;
+}
+
+.ts-green {
+  color: #5e9d34;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  margin: 20px 50px;
+}
+
+.header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #CCC;
+  background: #414141;
+  margin: 0;
+  padding: 20px 50px;
+  color: #FFF;
+}
+
+.current-desc {
+  margin-bottom: 50px;
+}
+
+.current-desc p {
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.flex-item:nth-child(1) {
+  background: #FFF;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin-right: 20px;
+}
+
+.flex-item:nth-child(1).no-style {
+  background: none;
+  border: none;
+}
+
+.flex-item:nth-child(1).no-margin {
+  margin: 0;
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 700px;
+  align-self: auto;
+  margin-left: 20px;
+  max-width: 700px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  border-left:1px solid #777;
+}
+
+nav li:first-child a {
+  padding: 5px 10px 5px 0;
+}
+
+nav li:last-child {
+  border-left: none;
+  float: right;
+}
+
+nav li:first-child {
+  border-left: none;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #a7dfff;
+}
+
+nav li a.active {
+  text-decoration: underline;
+  color: #cce2f5;
+}
+
+nav li:last-child a {
+  text-decoration: underline;
+  color: #b2d782
+}
+
+.preview-container {
+  padding: 20px;
+}
